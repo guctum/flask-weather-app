@@ -12,7 +12,7 @@ def retrieveWeather():
     propData = data['forecast']['forecastday'][0]['day']
     today = propData
     #today = next(iter(propData))
-    final_string = ["**High**: " + str(today['maxtemp_f']) + "°F\r\n**Low**: " + str(today['mintemp_f']) + "°F\r\n" + "**Chance of Rain**: " + today['daily_chance_of_rain'] + "%\r\n**Condition**: " + today['condition']['text'], data['current']['condition']['icon']]
+    weather = ["**High**: " + str(today['maxtemp_f']) + "°F\r\n**Low**: " + str(today['mintemp_f']) + "°F\r\n" + "**Chance of Rain**: " + today['daily_chance_of_rain'] + "%\r\n**Condition**: " + today['condition']['text'], data['current']['condition']['icon']]
     #return final_string
-    return final_string
+    return weather
 

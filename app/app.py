@@ -1,7 +1,7 @@
 from flask import Flask
 import weather
 
-
+import autodynatrace
 
 def setup():
     app = Flask("flask-weather-app")

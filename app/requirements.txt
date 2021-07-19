@@ -1,8 +1,13 @@
+autodynatrace==1.0.81
+autowrapt==1.0
 click==8.0.1
 colorama==0.4.4
 Flask==2.0.1
 itsdangerous==2.0.1
 Jinja2==3.0.1
 MarkupSafe==2.0.1
+oneagent-sdk==1.4.0.20210127.165413
 python-dotenv==0.18.0
+six==1.16.0
 Werkzeug==2.0.1
+wrapt==1.12.1

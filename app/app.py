@@ -1,8 +1,19 @@
 from flask import Flask
 import weather
 
-app = Flask(__name__)
 
-@app.route("/")
-def get_weather():
-    return str(weather.retrieveWeather())
+
+def setup():
+    app = Flask("flask-weather-app")
+
+    @app.route("/")
+    def home():
+        return "Welcome to the Flask Weather App!"
+    
+    @app.route("/weathercheck")
+    def get_weather():
+        return weather.retrieveWeather()
+
+    return app
+
+app = setup()

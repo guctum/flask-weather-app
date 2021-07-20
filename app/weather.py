@@ -1,9 +1,12 @@
 import urllib
 import json
 import os
+import os.path
 from dotenv import load_dotenv
 
-load_dotenv()
+if path.exists(".env"):
+    load_dotenv()
+
 token = os.getenv('WEATHER_TOKEN')
 
 def retrieveWeather():

@@ -4,7 +4,7 @@ import os
 import os.path
 from dotenv import load_dotenv
 
-if path.exists(".env"):
+if os.path.exists(".env"):
     load_dotenv()
 
 token = os.getenv('WEATHER_TOKEN')
